@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Playwright artefacts
+playwright-report/
+blob-report/
+test-results/
+playwright/.cache/
+
+# Allure
+allure-results/
+allure-report/
+
+# Auth state (never commit sessions)
+.auth/
+
+# Local configuration and secrets
+.env
+.env.local
+
+# Logs and editor files
+*.log
+logs/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
