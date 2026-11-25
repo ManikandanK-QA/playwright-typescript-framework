@@ -5,6 +5,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+**[Live Allure report →](https://manikandank-qa.github.io/playwright-typescript-framework/)** (published by CI on every push to `main`)
+
 A layered test automation framework for **UI, REST API and accessibility** testing,
 built with Playwright and TypeScript. It is deliberately structured the way a
 maintained suite is structured in a team: page objects without assertions,
@@ -162,7 +164,8 @@ Every run produces:
 - **Playwright HTML** — `npm run report`
 - **JUnit XML** — `test-results/junit.xml`, for CI dashboards and test-management imports
 - **Allure results** — `allure-results/`, rendered by CI into one combined report
-  and published to the `gh-pages` branch
+  and published to GitHub Pages: <https://manikandank-qa.github.io/playwright-typescript-framework/>.
+  The report keeps trend history across runs.
 
 Traces, screenshots and video are retained on failure (`trace: retain-on-failure`).
 A failing test is diagnosed from the artifact, not by re-running it locally.

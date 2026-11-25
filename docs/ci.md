@@ -40,13 +40,10 @@ Design points:
 On `main`, the publish job downloads every `allure-*` artifact, generates one
 combined report and pushes it to the `gh-pages` branch.
 
-One-time setup on GitHub:
-
-1. **Settings → Pages → Build and deployment → Source: Deploy from a branch**
-2. Branch: `gh-pages`, folder: `/ (root)`
-3. Report URL: `https://<user>.github.io/<repo>/`
-
-The first successful run creates the branch. Until then the Pages URL 404s.
+Pages is enabled for this repository: **Settings → Pages → Deploy from a branch
+→ `gh-pages` / root**, serving
+<https://manikandank-qa.github.io/playwright-typescript-framework/>. The first
+successful run creates the branch; later runs keep the trend history.
 
 ## Local parity
 
